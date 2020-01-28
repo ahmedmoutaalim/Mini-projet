@@ -1,0 +1,112 @@
+body {
+  
+    background-color: gainsboro;
+    font-size: 90%;
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.titre h2 {
+
+    font-weight: 400;
+
+   
+
+}
+
+.section img {
+
+    margin-left: 260px;
+
+   
+
+}
+
+/*-----------------------------organisation------------------------------*/
+.section{
+
+    background-color: white; 
+    display: inline-block;
+    margin:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+    border-top:3px solid black;
+    padding: 20px;
+    text-align: justify;
+}
+
+#org {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:" .     part1.      "    
+                        " part2 part1 part3 "
+                        " part2 part4 part3 "                  
+                        " .     part4.      ";
+                                                  
+
+}
+
+.part1 {
+
+    
+   border-color:  Cyan ; 
+   grid-area: part1;
+
+    
+
+
+}
+
+.part2 {
+
+   border-color:red;
+   grid-area: part2;
+   
+
+}
+
+.part3 {
+
+   border-color: orange;
+
+   grid-area: part3;
+
+}
+
+.part4 {
+
+   border-color: blue;
+   grid-area: part4;
+
+
+
+
+}
+@media  (max-width:500px){
+   #org {  
+
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "part1"
+                         "part2"
+                         "part3"
+                         "part4" ;  
+
+
+
+       
+
+   }  
+}
+
+    
+    
+    
+
